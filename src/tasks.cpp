@@ -27,15 +27,18 @@ PoolCosts calculateCosts() {
     pool.setRadius(3.0);
 
     Circle pool_with_walkway;
-    pool_with_walkway.setRadius(3.0 + width_of_the_concrete_walkway_around_the_pool);
+    pool_with_walkway.setRadius(3.0 + 
+        width_of_the_concrete_walkway_around_the_pool);
 
     double area_walkway = pool_with_walkway.getArea() - pool.getArea();
 
     double ference_fence = pool_with_walkway.getFerence();
 
-    double full_cost_concrete_pavement = cost_of_one_square_meter_of_concrete_pavement * area_walkway;
+    double full_cost_concrete_pavement = 
+        cost_of_one_square_meter_of_concrete_pavement * area_walkway;
     
-    double full_cost_fence = cost_of_one_linear_meter_of_fence * ference_fence;
+    double full_cost_fence = 
+        cost_of_one_linear_meter_of_fence * ference_fence;
 
     return PoolCosts{full_cost_concrete_pavement, full_cost_fence};
 }

@@ -4,12 +4,12 @@
 #include <cstdint>
 
 class Circle {
-private:
+ private:
     double radius; 
     double ference;
     double area;
     const double pi = 3.1415926535;
-public:
+ public:
     Circle();
 
     void setRadius(double _radius);

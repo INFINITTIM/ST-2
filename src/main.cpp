@@ -6,8 +6,10 @@ int main() {
     // Circle a;
     // a.setArea(5);
     // std::cout << "Radius: "<< a.getRadius() << std::endl;
-    // std::cout << "Ference: "<< a.getFerence() << " (F = 2 * pi * radius)" << std::endl;
-    // std::cout << "Area: "<< a.getArea() << " (A = pi * radius^2)" << std::endl;
+    // std::cout << "Ference: "<< a.getFerence() 
+    // << " (F = 2 * pi * radius)" << std::endl;
+    // std::cout << "Area: "<< a.getArea() 
+    // << " (A = pi * radius^2)" << std::endl;
     // tests program
 
     const double Earth_radius_in_kilometers = 6378.1;
