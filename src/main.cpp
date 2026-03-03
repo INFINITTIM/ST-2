@@ -6,9 +6,9 @@ int main() {
     // Circle a;
     // a.setArea(5);
     // std::cout << "Radius: "<< a.getRadius() << std::endl;
-    // std::cout << "Ference: "<< a.getFerence() 
+    // std::cout << "Ference: "<< a.getFerence()
     // << " (F = 2 * pi * radius)" << std::endl;
-    // std::cout << "Area: "<< a.getArea() 
+    // std::cout << "Area: "<< a.getArea()
     // << " (A = pi * radius^2)" << std::endl;
     // tests program
 

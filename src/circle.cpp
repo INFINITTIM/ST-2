@@ -5,9 +5,9 @@
 #include "circle.h"
 
 Circle::Circle() {
-    radius = 0.0; // R 
+    radius = 0.0; // R
     ference = 0.0; // pi R^2
-    area = 0.0; // 2 pi R 
+    area = 0.0; // 2 pi R
 }
 
 void Circle::setRadius(double _radius) {

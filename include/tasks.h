@@ -2,7 +2,7 @@
 #ifndef INCLUDE_TASKS_H_
 #define INCLUDE_TASKS_H_
 
-struct PoolCosts 
+struct PoolCosts
 {
     double concrete_cost;
     double fence_cost;
