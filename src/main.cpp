@@ -1,7 +1,7 @@
 // Copyright 2022 UNN-CS
-#include "circle.h"
-
 #include <iostream>
+
+#include "circle.h"
 
 int main() {
     // Circle a;
