@@ -1,3 +1,5 @@
+// Copyright 2026 UNN-CS Team
+
 #include "tasks.h"
 #include "circle.h"
 
@@ -34,10 +36,10 @@ PoolCosts calculateCosts() {
 
     double ference_fence = pool_with_walkway.getFerence();
 
-    double full_cost_concrete_pavement =
+    double full_cost_concrete_pavement = 
         cost_of_one_square_meter_of_concrete_pavement * area_walkway;
-    
-    double full_cost_fence =
+
+    double full_cost_fence = 
         cost_of_one_linear_meter_of_fence * ference_fence;
 
     return PoolCosts{full_cost_concrete_pavement, full_cost_fence};

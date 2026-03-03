@@ -49,10 +49,10 @@ TEST(TaskTest, PoolWalkwayArea) {
     Circle poolWithWalkway;
     poolWithWalkway.setRadius(4.0);
     double expected_area = poolWithWalkway.getArea() - pool.getArea();
-    
+
     PoolCosts costs = calculateCosts();
     double actual_area = costs.concrete_cost / 1000.0;
-    
+
     EXPECT_NEAR(actual_area, expected_area, 1e-5);
 }
 
@@ -60,10 +60,10 @@ TEST(TaskTest, PoolFenceLength) {
     Circle poolWithWalkway;
     poolWithWalkway.setRadius(4.0);
     double expected_length = poolWithWalkway.getFerence();
-    
+
     PoolCosts costs = calculateCosts();
     double actual_length = costs.fence_cost / 2000.0;
-    
+
     EXPECT_NEAR(actual_length, expected_length, 1e-5);
 }
 
