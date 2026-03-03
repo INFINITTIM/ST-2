@@ -1,8 +1,10 @@
 // Copyright 2022 UNN-CS
-#include <cstdint>
-#include <math.h>
-#include <stdexcept>
+
 #include "circle.h"
+
+#include <cmath>
+#include <cstdint>
+#include <stdexcept>
 
 Circle::Circle() {
     radius = 0.0; // R

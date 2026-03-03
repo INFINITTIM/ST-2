@@ -4,6 +4,7 @@
 #include <cstdint>
 #include <stdexcept>
 #include <math.h>
+
 #include "circle.h"
 #include "tasks.h"
 
@@ -99,7 +100,8 @@ TEST(CircleTest, SetFerencePositive) {
     c.setFerence(f);
     EXPECT_NEAR(c.getFerence(), f, 1e-3);
     EXPECT_NEAR(c.getRadius(), f / (2 * 3.1415926535), 1e-3);
-    EXPECT_NEAR(c.getArea(), 3.1415926535 * pow(f / (2 * 3.1415926535), 2), 1e-3);
+    EXPECT_NEAR(c.getArea(),
+        3.1415926535 * pow(f / (2 * 3.1415926535), 2), 1e-3);
 }
 
 TEST(CircleTest, SetFerenceZero) {
@@ -117,7 +119,8 @@ TEST(CircleTest, SetAreaPositive) {
     c.setArea(a);
     EXPECT_NEAR(c.getArea(), a, 1e-3);
     EXPECT_NEAR(c.getRadius(), sqrt(a / 3.1415926535), 1e-3);
-    EXPECT_NEAR(c.getFerence(), 2 * 3.1415926535 * sqrt(a / 3.1415926535), 1e-3);
+    EXPECT_NEAR(c.getFerence(),
+        2 * 3.1415926535 * sqrt(a / 3.1415926535), 1e-3);
 }
 
 TEST(CircleTest, SetAreaZero) {
